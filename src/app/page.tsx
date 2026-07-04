@@ -73,8 +73,16 @@ export default function HomePage() {
           <div key={mix.id} className="scroll-card">
             <div 
               className="scroll-card-art"
-              style={{ background: `linear-gradient(135deg, ${mix.gradient[0]}, ${mix.gradient[1]})` }}
-            />
+              style={{ 
+                background: `linear-gradient(135deg, ${mix.gradient[0]}, ${mix.gradient[1]})`,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '48px'
+              }}
+            >
+              {mix.icon}
+            </div>
             <div className="scroll-card-name">{mix.name}</div>
             <div className="scroll-card-sub">{mix.artists}</div>
           </div>
@@ -87,8 +95,17 @@ export default function HomePage() {
           <div key={track.id} className="scroll-card">
             <div 
               className="scroll-card-art"
-              style={{ background: `linear-gradient(135deg, ${track.gradient[0]}, ${track.gradient[1]})`, borderRadius: '50%' }}
-            />
+              style={{ 
+                background: `linear-gradient(135deg, ${track.gradient[0]}, ${track.gradient[1]})`, 
+                borderRadius: '50%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '48px'
+              }}
+            >
+              {track.icon}
+            </div>
             <div className="scroll-card-name">{track.name}</div>
             <div className="scroll-card-sub">{track.artist}</div>
           </div>

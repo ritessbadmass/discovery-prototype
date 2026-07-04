@@ -123,17 +123,16 @@ export const MOCK_RECENT_PLAYLISTS = [
 ];
 
 export const MOCK_DAILY_MIXES = [
-  { id: 'dm-1', name: 'Daily Mix 1', artists: 'Novo Amor, Bon Iver, Phoebe Bridgers', gradient: ['#1a237e', '#5c6bc0'] },
-  { id: 'dm-2', name: 'Daily Mix 2', artists: 'Kendrick Lamar, J. Cole, Tyler', gradient: ['#b71c1c', '#e53935'] },
-  { id: 'dm-3', name: 'Daily Mix 3', artists: 'Khruangbin, Tame Impala, MGMT', gradient: ['#4a148c', '#ab47bc'] },
-  { id: 'dm-4', name: 'Daily Mix 4', artists: 'Radiohead, The Strokes, Arctic Monkeys', gradient: ['#263238', '#546e7a'] },
+  { id: 'dm-1', name: 'Daily Mix 1', artists: 'Novo Amor, Bon Iver, Phoebe Bridgers', gradient: ['#3f51b5', '#5c6bc0'], icon: '🌾' },
+  { id: 'dm-2', name: 'Daily Mix 2', artists: 'Kendrick Lamar, J. Cole, Tyler The Creator', gradient: ['#d32f2f', '#e53935'], icon: '🔥' },
+  { id: 'dm-3', name: 'Daily Mix 3', artists: 'Khruangbin, Tame Impala, Unknown Mortal Orchestra', gradient: ['#7b1fa2', '#8e24aa'], icon: '🎸' },
 ];
 
 export const MOCK_ON_REPEAT = [
-  { id: 'or-1', name: 'Motion Sickness', artist: 'Phoebe Bridgers', gradient: ['#212121', '#616161'] },
-  { id: 'or-2', name: 'Runaway', artist: 'AURORA', gradient: ['#1a237e', '#7986cb'] },
-  { id: 'or-3', name: 'Heat Waves', artist: 'Glass Animals', gradient: ['#e65100', '#ff9800'] },
-  { id: 'or-4', name: 'Bags', artist: 'Clairo', gradient: ['#880e4f', '#ec407a'] },
+  { id: 'or-1', name: 'Midnight City', artist: 'M83', gradient: ['#424242', '#616161'], icon: '🌃' },
+  { id: 'or-2', name: 'The Less I Know The Better', artist: 'Tame Impala', gradient: ['#3949ab', '#5c6bc0'], icon: '🔮' },
+  { id: 'or-3', name: 'Pink + White', artist: 'Frank Ocean', gradient: ['#f57c00', '#ff9800'], icon: '🌸' },
+  { id: 'or-4', name: 'Bags', artist: 'Clairo', gradient: ['#880e4f', '#ec407a'], icon: '🎒' },
 ];
 
 // Mock past sessions for taste profile
