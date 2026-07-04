@@ -47,11 +47,6 @@ export default function ActivatePage() {
   return (
     <>
       <div className="activate-page animate-fade-in">
-        <div className="activate-step-indicator">
-          <div className={`step-dot ${step >= 1 ? 'completed' : ''}`} />
-          <div className={`step-dot ${step >= 2 ? 'completed' : ''}`} />
-          <div className={`step-dot ${step === 3 ? 'completed' : ''}`} />
-        </div>
 
         {step === 1 && (
           <div className="animate-slide-in" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
