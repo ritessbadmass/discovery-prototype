@@ -52,8 +52,16 @@ export default function HomePage() {
           <div key={playlist.id} className="recent-card">
             <div 
               className="recent-card-art" 
-              style={{ background: `linear-gradient(135deg, ${playlist.gradient[0]}, ${playlist.gradient[1]})` }}
-            />
+              style={{ 
+                background: `linear-gradient(135deg, ${playlist.gradient[0]}, ${playlist.gradient[1]})`,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '24px'
+              }}
+            >
+              {playlist.icon}
+            </div>
             <div className="recent-card-name">{playlist.name}</div>
           </div>
         ))}

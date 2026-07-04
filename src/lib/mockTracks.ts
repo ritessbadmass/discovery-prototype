@@ -114,12 +114,12 @@ export const USER_GENRES = ['indie', 'hip-hop', 'alt-rock', 'electronic'];
 
 // Mock home feed data
 export const MOCK_RECENT_PLAYLISTS = [
-  { id: 'rp-1', name: 'Liked Songs', subtitle: '342 songs', gradient: ['#4a148c', '#7b1fa2'] },
-  { id: 'rp-2', name: 'Chill Vibes', subtitle: 'Your playlist', gradient: ['#004d40', '#00796b'] },
-  { id: 'rp-3', name: 'Workout Mix', subtitle: 'Your playlist', gradient: ['#bf360c', '#e64a19'] },
-  { id: 'rp-4', name: 'Daily Mix 1', subtitle: 'Novo Amor, Bon Iver, Iron & Wine', gradient: ['#1a237e', '#283593'] },
-  { id: 'rp-5', name: 'Release Radar', subtitle: 'New music for you', gradient: ['#1b5e20', '#388e3c'] },
-  { id: 'rp-6', name: 'Discover Weekly', subtitle: 'Made for you', gradient: ['#4e342e', '#6d4c41'] },
+  { id: 'rp-1', name: 'Liked Songs', subtitle: '342 songs', gradient: ['#4a148c', '#7b1fa2'], icon: '💚' },
+  { id: 'rp-2', name: 'Chill Vibes', subtitle: 'Your playlist', gradient: ['#004d40', '#00796b'], icon: '☕' },
+  { id: 'rp-3', name: 'Workout Mix', subtitle: 'Your playlist', gradient: ['#bf360c', '#e64a19'], icon: '💪' },
+  { id: 'rp-4', name: 'Daily Mix 1', subtitle: 'Novo Amor, Bon Iver, Iron & Wine', gradient: ['#1a237e', '#283593'], icon: '✨' },
+  { id: 'rp-5', name: 'Release Radar', subtitle: 'New music for you', gradient: ['#1b5e20', '#388e3c'], icon: '🔔' },
+  { id: 'rp-6', name: 'Discover Weekly', subtitle: 'Made for you', gradient: ['#4e342e', '#6d4c41'], icon: '🎧' },
 ];
 
 export const MOCK_DAILY_MIXES = [

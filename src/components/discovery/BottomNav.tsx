@@ -17,8 +17,8 @@ export default function BottomNav() {
           <span>Home</span>
         </Link>
         <Link
-          href="/"
-          className="bottom-nav-item"
+          href="/search"
+          className={`bottom-nav-item ${pathname === '/search' ? 'active' : ''}`}
         >
           <span className="bottom-nav-icon">🔍</span>
           <span>Search</span>
