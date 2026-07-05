@@ -168,7 +168,7 @@ export default function ReviewPage() {
           <div className="review-track-meta">{signal.artist} · {signal.genre}</div>
         </div>
         <div className="review-track-signal">
-          {signal.userSignal === 'love' ? '❤️' : signal.userSignal === 'okay' ? '👍' : signal.userSignal === 'dislike' ? '✗' : ''}
+          {signal.userSignal === 'love' ? '❤️' : signal.userSignal === 'okay' ? '📡' : signal.userSignal === 'dislike' ? '✗' : ''}
         </div>
       </div>
     );
@@ -193,7 +193,7 @@ export default function ReviewPage() {
 
         {otherSignals.length > 0 && (
           <div className="review-section">
-            <h2 className="review-section-title">🤔 What about these?</h2>
+            <h2 className="review-section-title">🤔 You were on the fence about these</h2>
             {otherSignals.map(renderTrackRow)}
           </div>
         )}

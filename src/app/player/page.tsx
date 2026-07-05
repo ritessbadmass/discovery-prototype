@@ -35,6 +35,7 @@ export default function PlayerPage() {
   // Love Modal State
   const [showLoveModal, setShowLoveModal] = useState(false);
   const [impactRecommendations, setImpactRecommendations] = useState(false);
+  const [isScanning, setIsScanning] = useState(false);
   
   const track = MOCK_TRACKS[trackIndex];
   const progressInterval = useRef<NodeJS.Timeout | null>(null);
@@ -254,10 +255,18 @@ export default function PlayerPage() {
         </button>
         <button 
           className={`action-btn ${userSignal === 'okay' ? 'active-okay' : ''}`}
-          onClick={() => handleSignal('okay')}
+          onClick={() => {
+            handleSignal('okay');
+            if (userSignal !== 'okay') {
+              setIsScanning(true);
+              setTimeout(() => setIsScanning(false), 1500);
+            }
+          }}
         >
-          <span className="action-btn-icon">👍</span>
-          <span>It's okay</span>
+          <span className={`action-btn-icon ${isScanning ? 'radar-pulse' : ''}`}>
+            {isScanning ? '📡' : (userSignal === 'okay' ? '📡' : '🤔')}
+          </span>
+          <span>Explore this more</span>
         </button>
         <button 
           className={`action-btn ${userSignal === 'love' ? 'active-love' : ''}`}
