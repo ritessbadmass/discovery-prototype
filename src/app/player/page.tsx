@@ -34,7 +34,6 @@ export default function PlayerPage() {
   
   // Love Modal State
   const [showLoveModal, setShowLoveModal] = useState(false);
-  const [savedToLiked, setSavedToLiked] = useState(false);
   const [impactRecommendations, setImpactRecommendations] = useState(false);
   
   const track = MOCK_TRACKS[trackIndex];
@@ -146,7 +145,6 @@ export default function PlayerPage() {
 
       if (newSignal === 'love') {
         setShowLoveModal(true);
-        setSavedToLiked(false);
         setImpactRecommendations(false);
       }
     }
@@ -362,22 +360,14 @@ export default function PlayerPage() {
         <div className="love-modal-overlay">
           <div className="love-modal-sheet">
             <div className="love-modal-header">
-              <h3 className="love-modal-title">Track Saved</h3>
-              <p className="love-modal-subtitle">What would you like to do next?</p>
+              <div style={{ fontSize: '32px', marginBottom: '8px' }}>💚</div>
+              <h3 className="love-modal-title">Added to Liked Songs</h3>
             </div>
             
             <div className="love-action-list">
-              <button 
-                className={`love-action-btn ${savedToLiked ? 'saved' : ''}`}
-                onClick={() => setSavedToLiked(!savedToLiked)}
-              >
-                <span className="love-action-icon">💚</span>
-                <span style={{ flex: 1, textAlign: 'left' }}>Liked Songs</span>
-                {savedToLiked && <span>✓</span>}
-              </button>
               <button className="love-action-btn" onClick={() => alert('Opening playlist selector...')}>
                 <span className="love-action-icon">🎵</span>
-                <span style={{ flex: 1, textAlign: 'left' }}>Add to Playlist...</span>
+                <span style={{ flex: 1, textAlign: 'left' }}>Add to a playlist...</span>
               </button>
             </div>
 
